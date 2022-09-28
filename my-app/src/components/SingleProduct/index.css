@@ -1,0 +1,92 @@
+/* 
+{cartItemsList.some((each) => each.id === id) ? (
+    <button
+        onClick={() => {
+            dispatch({
+                type: "REMOVE_FROM_CART",
+                payload: products,
+            });
+        }}
+    >
+        Remove From Cart
+    </button>
+) : (
+    <button
+        onClick={() => {
+            dispatch({
+                type: "ADD_TO_CART",
+                payload: products,
+            });
+        }}
+        disabled={!inStock}
+    >
+        {!inStock ? "Out Of Stock" : "Add to Cart"}
+    </button>
+)} 
+
+	const {
+		state: { cartItemsList },
+		dispatch,
+	} = CartState();
+
+*/
+
+.add-to-cart-button {
+	min-height: 39px;
+	width: 150px;
+	background-color: #fcd50f;
+	color: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0px;
+	border: 0px solid white;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.add-to-cart-button:hover {
+	background-color: #dba307;
+}
+
+.out-of-stock {
+	background-color: #f97f64;
+	min-height: 39px;
+	width: 150px;
+
+	color: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0px;
+	border: 0px solid white;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.remove-from-cart {
+	background-color: red;
+	min-height: 39px;
+	width: 150px;
+
+	color: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0px;
+	border: 0px solid white;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	opacity: 1;
+	transition-duration: 0.4s;
+}

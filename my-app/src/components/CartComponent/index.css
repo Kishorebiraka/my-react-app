@@ -1,0 +1,26 @@
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.cart-items-container {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.subtotal {
+	background-color: navy;
+	height: 90vh;
+	width: 20rem;
+	color: white;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
